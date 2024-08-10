@@ -663,6 +663,90 @@ print(myTuple[2])
 
 
 
+# tuble with one element 
+
+myTuple1 = ("khalifa",)
+myTuple2 = "khalifa",
+
+print(type(myTuple1))
+print(type(myTuple2))
+
+print(len(myTuple1))
+print(len(myTuple2))
+
+
+# tuble concatention
+
+a = (1 , 2 , 3)
+b =(4,5)
+
+c = a + b 
+d = a + (True , False) + b
+
+print(c)
+print(d)
+
+
+# tuple list string Repeat (*)
+
+myString = "khalifa"
+mylist = [1 , 2]
+myTuple = ('a' , "b")
+
+
+print(myString * 3)
+print(mylist * 4)
+print(myTuple * 5)
+
+
+# methods 
+#   count()
+#   index()
+
+
+# tuple Destract
+
+a = ('a' , 'b' , 'c')
+
+# x , y , z = 'a' , 'b' , 'c' 
+x , y , z = a 
+
+print(x)
+print(y)
+print(z)
+
+
+a = ('a' , 'b' , 7 , 'c')
+
+
+x , y , _,  z = a 
+
+print(x)
+print(y)
+print(z)
+
+
+
+# set 
+
+# not ordered and not indexing 
+
+myset1 =  {1 , "khalifa" , 5 ,7}
+print(myset1)
+# print(myset1[0]) error
+
+# can't be slicing
+# has only immutable data types
+
+# myset = {'khalifa' , 100 , 10.4 , True , [1 , 2, 3]} unhashable type 'list'
+myset = {'khalifa' , 100 , 10.4 , True , (1 , 2, 3)} 
+print(myset)
+
+# iteams is unique 
+
+myset = {1 , 2 , 'osama' , 'khalifa' , 1 , 'osama'}
+print(myset)
+
 
 
 

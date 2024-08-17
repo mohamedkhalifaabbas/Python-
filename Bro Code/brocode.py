@@ -196,3 +196,117 @@ path = r"F:\AI\python\folder\text.txt"
 # import game 
 # game.rps_game()      
 
+
+#      walrus operator or assigment operation  :=
+
+
+# happy =  True 
+# print(happy)
+
+# print(happy := True)
+
+
+foods = []
+
+while food := input("what food do you like ?") != 'q' : 
+    foods.append(food)
+
+
+
+#        functions to varibels 
+
+def hello() : 
+    print("hello")
+
+
+# h = hello 
+# h() 
+
+# p = print 
+# p("ahmed")
+
+
+#              higher order functions
+def loud(text) : 
+    return text.upper()
+
+
+def quiet(text) : 
+    return text.lower()
+
+def hello(func) :
+    text = func("hello")
+    print(text) 
+
+# hello(loud)    
+
+
+#    lambda  
+#  function write in 1 line , accept any num of argemnts but return on expression
+
+double   = lambda x : x *10 
+multiply = lambda x , y : x * y
+add      = lambda x , y , z : x + y + z
+
+
+# print(double(2))
+# print(multiply(2 ,4))
+# print(add(1,22 ,2))
+
+
+# #       filter (function , itreable)
+
+
+friends = [ ("mohamed" , 18) ,
+            ("ahmed" , 16) ,
+            ("kareem" , 17) , 
+            ("abdallh " , 19) ,
+            ("hazem" , 20)
+           ]
+
+age_fun = lambda age : age[1] >= 18 
+
+new_friends = list(filter(age_fun , friends))
+
+
+# for i in new_friends : 
+#     print(i)
+
+
+
+#        reduce(function , itreable) 
+
+import functools 
+
+w = ['h' , 'e' , 'l' , 'l' , 'o']
+
+word = functools.reduce(lambda x , y : x+y  , w )
+# w = ['h'  , 'e' , 'l' , 'l' , 'o']
+# w = ['he' , 'l' , 'l' , 'o']
+# w = ['hel' , 'l' , 'o']
+# w = ['hell' , 'o']
+# w = ['hello']
+
+# print(word)
+
+factroil = [5 , 4 ,3 ,2 ,1] 
+res = functools.reduce(lambda x ,y : x*y  , factroil)
+
+# print(res)
+
+
+#          zib() 
+
+usernames = ['Mohamed khalifa' , 'mohamed khaled' , "ahmed eid"]
+passwords = ['M123' , 'khaled22' , "a15@"]
+date = ['19/7/2024' , '2/5/2024' , "1/1/2022"]
+
+users = zip(usernames , passwords , date)
+
+
+# for i in users :
+#     print(i)
+
+
+
+
